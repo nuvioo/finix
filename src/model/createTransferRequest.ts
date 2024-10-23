@@ -203,7 +203,7 @@ export class CreateTransferRequest {
     {
       name: "splitTransfers",
       baseName: "split_transfers",
-      type: "SplitTransferDetails",
+      type: "Array<SplitTransferDetails>",
     },
   ];
 
