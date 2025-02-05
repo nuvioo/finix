@@ -3,7 +3,7 @@
  */
 
 // @ts-ignore
-import { RequestFile } from './models';
+import { ConfigurationDetails, RequestFile } from './models';
 
 export class UpdateDeviceRequest {
     /**
@@ -22,6 +22,22 @@ export class UpdateDeviceRequest {
     * Message to display on the idle screen.
     */
     'idleMessage'?: string;
+    /**
+    * The device's configuration details.
+    */
+    'configuration_details'?: ConfigurationDetails;
+    /**
+    * The device's description.
+    */
+    'description'?: string;
+    /**
+    * The device's name.
+    */
+    'name'?: string;
+    /**
+    * The device's serial number.
+    */
+    'serial_number'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -44,6 +60,26 @@ export class UpdateDeviceRequest {
         {
             "name": "idleMessage",
             "baseName": "idle_message",
+            "type": "string"
+        },
+        {
+            "name": "configuration_details",
+            "baseName": "configuration_details",
+            "type": "ConfigurationDetails"
+        },
+        {
+            "name": "description",
+            "baseName": "description",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "baseName": "name",
+            "type": "string"
+        },
+        {
+            "name": "serial_number",
+            "baseName": "serial_number",
             "type": "string"
         }    ];
 
