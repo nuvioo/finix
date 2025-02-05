@@ -25,7 +25,7 @@ export class UpdateDeviceRequest {
     /**
     * The device's configuration details.
     */
-    'configuration_details'?: ConfigurationDetails;
+    'configurationDetails'?: ConfigurationDetails;
     /**
     * The device's description.
     */
@@ -37,7 +37,7 @@ export class UpdateDeviceRequest {
     /**
     * The device's serial number.
     */
-    'serial_number'?: string;
+    'serialNumber'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -63,7 +63,7 @@ export class UpdateDeviceRequest {
             "type": "string"
         },
         {
-            "name": "configuration_details",
+            "name": "configurationDetails",
             "baseName": "configuration_details",
             "type": "ConfigurationDetails"
         },
@@ -78,7 +78,7 @@ export class UpdateDeviceRequest {
             "type": "string"
         },
         {
-            "name": "serial_number",
+            "name": "serialNumber",
             "baseName": "serial_number",
             "type": "string"
         }    ];
