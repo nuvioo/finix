@@ -18,6 +18,7 @@ describe('Devices API', () => {
             name: "Finix triPOS #1",
             model: Models.CreateDevice.ModelEnum.Mx915,
             description: "Mike Jones",
+            serialNumber: "MX915-123456789",
             configuration: {
                 allowDebit: true,
                 promptSignature: "NEVER",
