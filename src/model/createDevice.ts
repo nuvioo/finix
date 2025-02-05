@@ -27,6 +27,10 @@ export class CreateDevice {
     * Key value pair for annotating custom meta data (e.g. order numbers).
     */
     'tags'?: { [key: string]: string; } | null;
+    /**
+    * The serial number of the `Device`.
+    */
+    'serialNumber': string;
 
     static discriminator: string | undefined = undefined;
 
@@ -55,6 +59,11 @@ export class CreateDevice {
             "name": "tags",
             "baseName": "tags",
             "type": "{ [key: string]: string; }"
+        },
+        {
+            "name": "serialNumber",
+            "baseName": "serial_number",
+            "type": "string"
         }    ];
 
     static getAttributeTypeMap() {
