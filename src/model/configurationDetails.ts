@@ -76,7 +76,10 @@ export class ConfigurationDetails {
     'promptManualEntry'?: boolean;
 
     /**
-    * Sets whether the device will prompt the card holder for a signature by default. Available values include:<ul><li><strong>ALWAYS</strong><li><strong>NEVER</strong><li><strong>AMOUNT</strong>: Used in conjunction with `signature_threshold_amount` so when the threshold is reached the signature form appears on the device.
+    * Sets whether the device will prompt the card holder for a signature by default. Available values include:
+    * - ALWAYS
+    * - NEVER
+    * - AMOUNT: Used in conjunction with `signature_threshold_amount` so when the threshold is reached the signature form appears on the device.
     */
     'promptSignature'?: string;
 
