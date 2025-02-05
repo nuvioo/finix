@@ -37,6 +37,10 @@ export class ConfigurationDetails {
     * The threshold to prompt a signature when `prompt_signature` is set to **AMOUNT** (defaults to 0).
     */
     'signatureThresholdAmount'?: number;
+    /**
+    * Sets whether the tip amount is displayed on the receipt. (defaults to **false**).
+    */
+    'displayTipOnReceipt'?: boolean;
 
     static discriminator: string | undefined = undefined;
 
@@ -75,7 +79,12 @@ export class ConfigurationDetails {
             "name": "signatureThresholdAmount",
             "baseName": "signature_threshold_amount",
             "type": "number"
-        }    ];
+        },
+        {
+            "name": "displayTipOnReceipt",
+            "baseName": "display_tip_on_receipt",
+            "type": "boolean"
+        }];
 
     static getAttributeTypeMap() {
         return ConfigurationDetails.attributeTypeMap;
