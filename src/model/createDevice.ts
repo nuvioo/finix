@@ -74,6 +74,10 @@ export namespace CreateDevice {
         Ismp4 = <any> 'ISMP4',
         Android = <any> 'ANDROID',
         Lane3000 = <any> 'LANE_3000',
-        Link2500 = <any> 'LINK_2500'
+        Link2500 = <any> 'LINK_2500',
+        PAX_A800 = <any> 'PAX_A800',
+        PAX_A920PRO = <any> 'PAX_A920PRO',
+        D135 = <any> 'D135',
+        SUNMI_P2 = <any> 'SUNMI_P2'
     }
 }
