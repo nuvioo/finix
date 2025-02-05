@@ -1,6 +1,6 @@
 {
   "name": "@finix-payments/finix",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "The Finix API library for NodeJS",
   "main": "lib/api.js",
   "types": "lib/api.d.ts",
